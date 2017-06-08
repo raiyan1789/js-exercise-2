@@ -17,5 +17,12 @@
 	min-height: 30px;
 	border:5px double #01BAEF ;
 	padding: 5rem;
-	color: lightgreen;
+	color: blue;
+	background: #ffdab9;
+}
+#user-submit{
+
+	color:red;
+
+
 }
