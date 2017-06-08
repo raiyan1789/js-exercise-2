@@ -1,9 +1,21 @@
-* {
-	box-sizing: border-box;
+
+*{	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
-h1 {
-	color: pink;
+.main-header {
+	color: maroon;
+	text-align: center;
+	font-style: bold;
+}
+
+.to-do-form {
+
+	width: 50%;
+	margin: 50px auto;
+	min-height: 30px;
+	border:5px double #01BAEF ;
+	padding: 5rem;
+	color: lightgreen;
 }
