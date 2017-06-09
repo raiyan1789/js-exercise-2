@@ -15,8 +15,9 @@
 	width: 50%;
 	margin: 50px auto;
 	min-height: 30px;
-	border:5px double #01BAEF ;
-	padding: 5rem;
+	border:10px double #01BAEF ;
+	border-color: green;
+	padding: 5rem ;
 	color: blue;
 	background: #ffdab9;
 }
@@ -26,3 +27,15 @@
 
 
 }
+.close-to-do {
+
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 50px;
+	color:red;
+}
+.user-input{
+	width:100%
+	margin:10px;
+}
+

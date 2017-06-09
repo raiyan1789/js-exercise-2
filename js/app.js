@@ -1,23 +1,36 @@
 var userSubmit = document.querySelector('#user-submit');
+var toDolist = document.querySelector('#to-do-list');
+
+
 function addToDo(event){
 
 	event.preventDefault();
 	
 	var userInput = document.querySelector('#user-input');
-	var toDolist = document.querySelector('#to-do-list');
+	
 	
 	if(userInput.value === ''){
 		return false;
 	}
-	var li = document.createElement("li");
-	toDolist.innerHTML += '<li>' + userInput.value + '</li>';
-	document.getElementById("to-do-list").prependChild(li);
-
+	
+	toDolist.innerHTML = '<li><i class="fa fa-window-close close-to-do" aria-hidden="true"></i>' + userInput.value + '</li>' + toDolist.innerHTML;
+	
 
 	userInput.value = '';
 
 }
 
+function removeToDo(event) {
+	if(event.target.classList.contains('close-to-do')){
+		var li = event.target.parentElement;
+		toDolist.removeChild(li);
+		
+
+	}
+}
+
+
+toDolist.addEventListener('click', removeToDo, false);
 userSubmit.addEventListener('click', addToDo, false);
 
 
